@@ -1,0 +1,105 @@
+:root {
+    --accent-racing-orange: #FF5A00;  
+    --dark-asphalt-background: #0C0C0E; 
+    --card-surface-gray: #16161a;      
+    --high-contrast-white: #FFFFFF;     
+    --readable-body-white: #D1D1D6;     
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: var(--dark-asphalt-background);
+    color: var(--high-contrast-white);
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+main, 
+.container.my-5, 
+section.container {
+    flex: 1 0 auto;
+}
+footer {
+    flex-shrink: 0;
+}
+
+
+p, li, span, label {
+    color: var(--readable-body-white) !important;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+    color: var(--high-contrast-white) !important;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.brand-orange-text {
+    color: var(--accent-racing-orange) !important;
+}
+
+
+.racing-action-button {
+    background-color: var(--accent-racing-orange);
+    color: var(--high-contrast-white) !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px 28px;
+    border-radius: 0px; 
+    border: none;
+    transition: all 0.25s ease-in-out;
+}
+
+.racing-action-button:hover {
+    background-color: #E04F00;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 90, 0, 0.4);
+}
+
+.promo-card-container {
+    background-color: var(--card-surface-gray);
+    border: 1px solid #232329;
+    border-radius: 0px;
+    padding: 25px;
+    transition: all 0.3s ease;
+}
+
+.promo-card-container:hover {
+    border-color: var(--accent-racing-orange);
+    transform: translateY(-4px);
+}
+
+.accordion-item {
+    background-color: var(--card-surface-gray) !important;
+    border: 1px solid #232329 !important;
+    margin-bottom: 10px;
+}
+
+.accordion-button {
+    background-color: var(--card-surface-gray) !important;
+    color: var(--high-contrast-white) !important;
+    font-weight: 700;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--accent-racing-orange) !important;
+    box-shadow: none !important;
+}
+
+.accordion-body {
+    color: var(--readable-body-white) !important;
+    background-color: #111114;
+}
+
+.footer p{
+    color:#D1D1D6 !important
+}
